@@ -46,5 +46,6 @@ public class JavaOperations {
 
         int myInt22 = 3 << 2;
         System.out.println("myInt22 = " + myInt22);
+
     }
 }
