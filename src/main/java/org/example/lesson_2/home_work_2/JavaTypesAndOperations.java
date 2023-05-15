@@ -1,8 +1,9 @@
-package org.example.lesson_2.home_work_2;
+package org.example.lesson_2.home_work_2;//названия пакета без нижнего подчеркивания
 
+//+
 public class JavaTypesAndOperations {
     public static void main(String[] args) {
-
+//эту строку пустую можно убрать
         // Integer data tapes
         byte myByte1 = 30;
         byte myByte = 15;
