@@ -13,7 +13,7 @@ public class OddAndEvenSum {
         int sumEven = 0;
 
         for (int i = 0; i <= 100; i++) {
-            sumAll += i;
+            sumAll += i;//можно в цикле не считать, а после просто сложить sumOdd и sumEven
 
             if (i % 2 == 0) {
                 sumEven += i;
