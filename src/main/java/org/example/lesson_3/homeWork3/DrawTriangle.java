@@ -12,7 +12,8 @@ package org.example.lesson_3.homeWork3;
   **
    *
  */
-
+//примерно так я смотрю на это - https://www.youtube.com/watch?v=HHnrF2TxsZY )))
+//но ок, + 
 public class DrawTriangle {
     public static void main(String[] args) {
         int maxTriangle = 13;
