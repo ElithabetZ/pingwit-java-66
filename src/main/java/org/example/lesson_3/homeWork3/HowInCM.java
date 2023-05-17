@@ -5,7 +5,7 @@ package org.example.lesson_3.homeWork3;
  */
 public class HowInCM {
     public static void main(String[] args) {
-
+//можно удалить эту пустую строку
         for (int i = 1; i <= 20; i++){
             double inch = 2.54;
             double sum = i * inch;
