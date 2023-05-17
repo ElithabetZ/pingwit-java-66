@@ -2,6 +2,7 @@ package org.example.lesson_3.homeWork3;
 /*
 Составьте программу, вычисляющую A*B, не пользуясь операцией умножения.
  */
+//+
 public class ABSum {
     public static void main(String[] args) {
         int a = 10;
