@@ -7,7 +7,9 @@ import java.util.Scanner;
 
 public class EvenNumbers {
     public static void main(String[] args) {
+        //sout
         int startNumber = getStartNumber();
+        //sou
         int endNumber = getEndNumber();
         printRangeOfNumbers(startNumber, endNumber);
     }
