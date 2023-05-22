@@ -8,6 +8,7 @@ import java.util.Scanner;
  - Посчитать сумму нечетных и вывести на экран
  - Найти общую сумму всех чисел
  */
+//очень круто, лишь пару комментов
 public class SumOddAndEvenNumbers {
     public static void main(String[] args) {
 
@@ -15,7 +16,7 @@ public class SumOddAndEvenNumbers {
         int endNumber = getEndNumber();
         int startEven = 0;
         int startOdd = 0;
-
+        //100 - в переменную
         if (startNumber < 100 && endNumber < 100) {
             if (startNumber > 0 && endNumber > 0) {
                 if (startNumber % 2 == 0) {
@@ -56,7 +57,7 @@ public class SumOddAndEvenNumbers {
         sumAllNumbers = sumEvenNumbers + sumOddNumbers;
         System.out.println("Sum of all numbers from your range is " + sumAllNumbers);
     }
-
+    //то же, что и в прошлом - один метод для 2-ч чисел
     public static int getStartNumber() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please, write some number from 0 to 100 ");
