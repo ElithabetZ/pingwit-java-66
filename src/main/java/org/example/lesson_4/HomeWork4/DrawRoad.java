@@ -9,7 +9,8 @@ import java.util.Scanner;
 public class DrawRoad {
     public static void main(String[] args) {
         int timeLimitSeconds = getTimeInSec();
-        long presentTime = System.currentTimeMillis();
+        long presentTime = System.currentTimeMillis();//present -> current лучше
+        //(timeLimitSeconds * 1000) - в переменную
         long timeLimitMils = presentTime + (timeLimitSeconds * 1000);
 
         while (presentTime <= timeLimitMils) {
@@ -19,8 +20,9 @@ public class DrawRoad {
     }
 
     public static void drawTheRoad() {
+        //а что такое 6? В переменную
         for (int i = 0; i <= 6; i++) {
-            String codeFirst = "";
+            String codeFirst = "";//название странное, не осмысленное. Можно было просто String emptySymbol = " ";
             for (int k = 0; k <= 6 - i; k++) {
                 codeFirst += " ";
             }
