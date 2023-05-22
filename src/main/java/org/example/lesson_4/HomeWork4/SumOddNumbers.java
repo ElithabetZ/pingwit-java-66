@@ -7,20 +7,20 @@ import java.util.Scanner;
  */
 public class SumOddNumbers {
     public static void main(String[] args) {
-        int limit = 99;
+        int limit = 99;//это должен пользователь вводить
         int startNumber = getStartNumber(limit);
         int endNumber = getEndNumber(limit);
         int sum = 0;
         printSumOfOddNumbers(startNumber, endNumber, limit, sum);
     }
-
+    //тот же коммент
     public static int getStartNumber(int limit){
         Scanner scan = new Scanner(System.in);
         System.out.println("Please, type integer number you want to start with, but not negative and more than " + limit);
         int startNumber = scan.nextInt();
         return startNumber;
     }
-
+    //тот же коммент
     public static int getEndNumber(int limit){
         Scanner scan = new Scanner(System.in);
         System.out.println("Please, type integer number you want to end with, but not negative and more than "+ limit);
