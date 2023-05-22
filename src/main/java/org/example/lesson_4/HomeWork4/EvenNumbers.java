@@ -12,6 +12,7 @@ public class EvenNumbers {
         printRangeOfNumbers(startNumber, endNumber);
     }
 
+    //getStartNumber and getEndNumber делают по сути одно и то же. Просто разное сообщение выводят. Объедини это в 1 метод
     public static int getStartNumber() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please, type integer number you want to start with, but not negative");
@@ -35,7 +36,7 @@ public class EvenNumbers {
             if (startNumer < endNumber) {
                 if (startNumer % 2 == 0) {
                     do {
-                        System.out.println(startNumer);
+                        System.out.println(startNumer);//логика с 39-40 и 45-46 одна и та же => в отдельный метод можно
                         startNumer += 2;
                     } while (startNumer <= endNumber);
                 } else {
@@ -46,10 +47,10 @@ public class EvenNumbers {
                     }
                 }
             } else {
-                System.out.println("Oppppps... First number must be smaller than the second :)");
+                System.out.println("Oppppps... First number must be smaller than the second :)");//good!
             }
         } else {
-            System.out.println("Oppppps... Only positive numbers :)");
+            System.out.println("Oppppps... Only positive numbers :)");//good!
         }
 
     }
