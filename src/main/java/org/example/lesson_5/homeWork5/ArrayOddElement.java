@@ -12,7 +12,7 @@ public class ArrayOddElement {
         for(int i = 1; i < array.length; i+=2){
             array[i] = 0;
         }
-
+        //пустая строка
         System.out.println(Arrays.toString(array));
     }
 }
