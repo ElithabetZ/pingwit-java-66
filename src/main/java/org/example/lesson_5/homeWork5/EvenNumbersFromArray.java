@@ -5,6 +5,7 @@ import java.util.Arrays;
 /*
 Есть массив чисел. Необходимо создать другой массив содержащий только четные элементы из первого
  */
+//+
 public class EvenNumbersFromArray {
     public static void main(String[] args) {
         int lenghtOfArray = 10;
