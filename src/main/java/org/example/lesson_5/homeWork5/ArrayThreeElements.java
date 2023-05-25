@@ -7,11 +7,12 @@ import java.util.Scanner;
 Создать массив из 3 элементов. При помощи класса сканер и пользователя заполнить его.
 Вывести сумму, наименьшее и наибольшее из чисел на экран
  */
+//убирай лишние строки и форматируй код
 public class ArrayThreeElements {
     public static void main(String[] args) {
-        int lenghtArray = 3;
+        int lenghtArray = 3;//пользователь вводит
         int[] arrayElements = new int[lenghtArray];
-        int sumOfArray = fillArrayAndGetSum(arrayElements);
+        int sumOfArray = fillArrayAndGetSum(arrayElements);//fill and getSum - звучит как 2 метода
         Arrays.sort(arrayElements);
         System.out.println("Sum of numbers in array is " + sumOfArray);
         System.out.println("The biggest numbers in array is " + arrayElements[lenghtArray - 1]);
