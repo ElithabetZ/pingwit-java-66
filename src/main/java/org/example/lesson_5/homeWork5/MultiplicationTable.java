@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class MultiplicationTable {
     public static void main(String[] args) {
 
-        int[][] multipTable = new int[10][10];
+        int[][] multipTable = new int[10][10];//можно было дать возможность пользователю решить
         printMultiplicationTable(multipTable);
     }
 
