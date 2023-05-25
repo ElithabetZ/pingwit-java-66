@@ -12,7 +12,7 @@ public class InvertedOrder {
         swap(array);
         System.out.println(Arrays.toString(array));
     }
-
+    //можно было инвертировать, проитерировшись лишь только до половины массива
     public static void swap(int[] array) {
         int i = 0;
         int j = (array.length - 1);
