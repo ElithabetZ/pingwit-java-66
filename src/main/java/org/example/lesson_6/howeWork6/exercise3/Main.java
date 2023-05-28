@@ -9,6 +9,7 @@ import java.util.Scanner;
 Создайте массив, состоящий из объектов класса из 'Task 2'. Выведите полученный массив на экран, должны отображаться
 названия полей класса и их значения.
  */
+//суть задания была в другом - создать массив Person[]
 public class Main {
     public static void main(String[] args) {
         int lenght = findHowManyIterations();
@@ -21,6 +22,7 @@ public class Main {
         System.out.println(Arrays.toString(array));
     }
 
+    //+
     public static int findHowManyIterations() {
         Scanner scan = new Scanner(System.in);
         System.out.println("How many person do you want to add?");
