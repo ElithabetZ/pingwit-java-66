@@ -29,6 +29,4 @@ public class ArrayThreeElements {
         }
         return sumOfArray;
     }
-
-    ;
 }

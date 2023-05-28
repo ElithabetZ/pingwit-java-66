@@ -13,7 +13,6 @@ public class EvenNumbersFromArray {
         System.out.println(Arrays.toString(array));
         int[] arrayEven = getEvenArray(array, findLenghtOfEvenArray(array));
         System.out.println(Arrays.toString(arrayEven));
-
     }
 
     public static int[] createArray(int lenght) {

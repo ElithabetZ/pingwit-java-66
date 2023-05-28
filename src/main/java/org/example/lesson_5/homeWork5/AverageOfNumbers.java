@@ -11,7 +11,6 @@ public class AverageOfNumbers {
         int averageArray = (sumOfArray / array.length);
         System.out.println("Average of the array is " + averageArray);
     }
-
     //лучше не get, а count
     public static int getSumOfArray(int[] array) {
         int sum = 0;
@@ -20,7 +19,4 @@ public class AverageOfNumbers {
         }
         return sum;
     }
-
-    ;
-
 }
