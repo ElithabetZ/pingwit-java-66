@@ -1,5 +1,5 @@
 package org.example.lesson_6.howeWork6.exercise2;
-
+//+
 public class Main {
     public static void main(String[] args) {
         Person kate = new Person("Kate", 25);
