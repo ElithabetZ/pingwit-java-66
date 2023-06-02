@@ -34,6 +34,6 @@ public class Person {
         return "{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                '}' + text;
+                '}';
     }
 }

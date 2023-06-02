@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int lenght = findHowManyIterations();
-        String[] array = new String[lenght];
+        Person[] array = new Person[lenght];
         int iteraton = 0;
         while (iteraton < lenght) {
             array[iteraton] = getPerson();
@@ -28,14 +28,13 @@ public class Main {
         return lenght;
     }
 
-    public static String getPerson() {
+    public static Person getPerson() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Type name of the person");
         String name = scan.next();
         System.out.println("Type age of the person " + name);
         int age = scan.nextInt();
         Person person = new Person(name, age);
-        String object = person.toString();
-        return object;
+        return person;
     }
 }
