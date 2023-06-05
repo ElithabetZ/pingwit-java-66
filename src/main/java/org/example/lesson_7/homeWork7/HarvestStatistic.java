@@ -1,5 +1,5 @@
 package org.example.lesson_7.homeWork7;
-
+//+
 public class HarvestStatistic {
     private String plant;
     private Double totalWeight;
