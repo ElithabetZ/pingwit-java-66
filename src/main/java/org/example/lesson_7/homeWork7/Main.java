@@ -8,6 +8,14 @@ public class Main {
         Harvest three = new Harvest(00014L, "Ali", "Wheat", 25800.3);
         Harvest four = new Harvest(00014L, "Ali", "Rice", 200.23);
         Harvest five = new Harvest(00014L, "Ali", "Rye", 25800.3);
+       /* Harvest[] harvest = {
+        new Harvest(00014L, "Ali", "Wheat", 2580.23),
+        new Harvest(00014L, "Ali", "Rye", 20.23),
+        new Harvest(00014L, "Ali", "Wheat", 25800.3),
+        new Harvest(00014L, "Ali", "Rice", 200.23),
+        new Harvest(00014L, "Ali", "Rye", 25800.3)
+       }
+       */
         Harvest[] giveme = new Harvest[lenghtOfArray];
         giveme[0] = one;
         giveme[1] = two;
@@ -19,6 +27,7 @@ public class Main {
         HarvestStatistic[] stat = harvServ.calculateStatistic(giveme);
 
         for (int i = 0; i < stat.length; i++) {
+            //!=null without ""
             if(stat[i].getPlant() != "Null") {
                 System.out.println(stat[i]);
             }
