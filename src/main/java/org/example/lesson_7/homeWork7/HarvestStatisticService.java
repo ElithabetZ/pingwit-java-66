@@ -15,7 +15,7 @@ public class HarvestStatisticService {
                 for (int g = i + 1; g < exampleHarvest.length; g++) {
                     String fieldG = exampleHarvest[g].getPlant();
                     Double weightG = exampleHarvest[g].getWeight();
-                    if (fieldG == field) {
+                    if (fieldG == field) {//need to use equals. May leed to improper result
                         weight += weightG;
                         exampleHarvest[g].setPlant("Null");//null
                     }
