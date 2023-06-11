@@ -1,6 +1,8 @@
 package org.example.lesson_9.home_work_9.task_2;
 
-//TypeOfHouse звучит как enum, а не класс. Этот надо было назвать по заданию -  городская многоэтажка/загородный дом
+//TypeOfHouse звучит как enum, а не класс. Этот надо было назвать по заданию -  городская многоэтажка/загородный дом.
+//В твоей имплементации надо было лучше enum создать. И заменить в House поле String на него. А этот класс и вообще бы тогда не нужен был
+//и все поля бы переехали в House. 
     public class TypeOfHouse extends House {
 
         private int numberOfFloar;
