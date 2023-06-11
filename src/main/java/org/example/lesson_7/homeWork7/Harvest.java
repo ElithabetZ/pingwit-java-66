@@ -4,7 +4,7 @@ public class Harvest {
     private Long id;
     private String field;
     private String plant;
-    private Double weight;
+    private Double weight;//what about BigDecimal?
 
     public Harvest(Long id, String field, String plant, Double weight){
         this.id = id;
