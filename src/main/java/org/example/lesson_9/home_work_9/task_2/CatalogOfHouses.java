@@ -3,6 +3,7 @@ package org.example.lesson_9.home_work_9.task_2;
 import java.util.Arrays;
 
 public class CatalogOfHouses {
+    //House[] houses
     private TypeOfHouse[] houses;
 
     public CatalogOfHouses(TypeOfHouse[] houses)
