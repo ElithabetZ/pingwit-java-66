@@ -4,7 +4,7 @@ public class HarvestStatisticService {
     private Harvest harvest0;
 
     public HarvestStatistic[] calculateStatistic(Harvest[] harvest) {
-        Harvest[] exampleHarvest = harvest;
+        Harvest[] exampleHarvest =  harvest;
         HarvestStatistic[] endHarvest = new HarvestStatistic[exampleHarvest.length];
 
         for (int i = 0; i < exampleHarvest.length; i++) {

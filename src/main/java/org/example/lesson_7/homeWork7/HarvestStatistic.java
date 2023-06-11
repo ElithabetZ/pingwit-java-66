@@ -1,5 +1,7 @@
 package org.example.lesson_7.homeWork7;
 
+import java.util.Objects;
+
 public class HarvestStatistic {
     private String plant;
     private Double totalWeight;
@@ -20,4 +22,5 @@ public class HarvestStatistic {
     public String getPlant() {
         return plant;
     }
+
 }

@@ -23,5 +23,11 @@ public class Main {
                 System.out.println(stat[i]);
             }
         }
+
+        for (int i = 0; i < giveme.length; i++) {
+
+                System.out.println(giveme[i]);
+
+        }
     }
 }
