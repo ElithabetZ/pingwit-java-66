@@ -1,5 +1,5 @@
 package org.example.lesson_9.home_work_9.task_3;
-
+//ты все смешала в 1 класс. Подразумевалось создать несколько - Car, Transmission, Engine. Ведь это разные сущности.
 public class Car {
     private String name;
     private int year;
