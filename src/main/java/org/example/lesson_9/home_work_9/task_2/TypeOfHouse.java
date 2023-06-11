@@ -1,6 +1,6 @@
 package org.example.lesson_9.home_work_9.task_2;
 
-
+//TypeOfHouse звучит как enum, а не класс. Этот надо было назвать по заданию -  городская многоэтажка/загородный дом
     public class TypeOfHouse extends House {
 
         private int numberOfFloar;
