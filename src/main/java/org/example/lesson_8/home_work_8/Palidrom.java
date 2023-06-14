@@ -29,6 +29,8 @@ public class Palidrom {
         return versaChar;
     }
 
+    //просто isPalindrom. Этот метод не нужен. По сути ты это видишь в swap методе. Он и есть isPalindrom. Просто надо его boolean 
+    //сделать и возвращать false, когда не было совпадения по символам.
     static void isItPalindrom(String word, String versaWord)
     {
         boolean isItPalindrom;

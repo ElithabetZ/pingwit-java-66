@@ -1,5 +1,5 @@
 package org.example.lesson_9.home_work_9.task_1;
-
+//ok
 public class Main {
     public static void main(String[] args) {
         Apple apple = new Apple();
