@@ -1,5 +1,6 @@
 package org.example.lesson_10.home_work_10.task_1;
 
+//у тебя все овощи дублируют одни и те же поля. Логичнее их перенести в Vegetable
 public class Cucumber extends Vegetable{
     private double kalories;
     private double weight;
