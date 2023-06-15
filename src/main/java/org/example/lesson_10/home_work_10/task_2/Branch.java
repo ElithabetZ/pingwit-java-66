@@ -4,10 +4,19 @@ import java.util.Random;
 
 public class Branch {
     private Fruit name;
+    // numOfFruits
     private int howManyFruits;
+    //это не поле класса. Как оно характеризует ветку?
     private Random rand = new Random();
+    //тоже сомнитетельное название для поля класса. Выглядит как константа - static final.
     private int upperbound = 100;
 
+    /* и должен быть второй конструктор : 
+        public Branch(Fruit fruit) {
+        this(fruit, new Random().nextInt(upperbound));
+        
+    }
+    */
     public Branch(Fruit name, int howManyFruits)
     {
         this.name = name;
