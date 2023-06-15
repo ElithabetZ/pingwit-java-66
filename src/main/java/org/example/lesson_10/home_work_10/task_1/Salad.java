@@ -2,6 +2,7 @@ package org.example.lesson_10.home_work_10.task_1;
 
 public class Salad {
     private Vegetable[] vegetables;
+    //это не совсем поля класса. Это больше какие-то локальные переменные метода
     private double sumOfKalories;
     private double sumOfWeight;
 
