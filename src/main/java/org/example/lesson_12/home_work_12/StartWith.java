@@ -8,14 +8,16 @@ import java.util.Arrays;
 public class StartWith {
     public static void main(String[] args) {
         String[] words = {"fellfe", "fneirjnfier", "wodmpwfn", "fhieufberi", "wdm,welnferk", "Wliqnfowgnor" };
+        //не надо заводить 2 переменные. Сравнивать только с 1 (использовать либо toLowerCase(), либо upper)
         String letterUpper = "W";
         String letterLowwer = "w";
         System.out.println(Arrays.toString(findWords(words, letterUpper, letterLowwer)));
     }
 
+    //соответственно тут будут только 2 параметра
     public static String[] findWords(String[] words, String letterUp, String letterLow) {
         String[] temArray = new String[words.length];
-        int howManyWords = 0;
+        int howManyWords = 0;//не очень нейминг. Лучше wordsCouter либо просто couter, т.к по названию метода и так понятно, что words
         for (int i = 0; i < words.length; i++) {
             if (words[i].startsWith(letterUp)) {
                 temArray[howManyWords] = words[i];
