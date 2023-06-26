@@ -11,6 +11,19 @@ public class Apple extends Product{
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Apple apple)) return false;
+        if (!super.equals(o)) return false;
+        return Objects.equals(color, apple.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), color);
+    }
+
+    @Override
     public String toString() {
         return "Apple{" +
                 "color='" + color + '\'' +

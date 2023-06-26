@@ -13,6 +13,19 @@ public class Computer extends Product{
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Computer computer)) return false;
+        if (!super.equals(o)) return false;
+        return ram == computer.ram && Objects.equals(processor, computer.processor);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), processor, ram);
+    }
+
+    @Override
     public String toString() {
         return "Computer{" +
                 "processor='" + processor + '\'' +
