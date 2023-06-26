@@ -1,5 +1,6 @@
 package org.example.lesson_13.home_work_13.task_2;
 
+//супер!++
 public class Main {
     public static void main(String[] args) {
         Product[] products = {
