@@ -1,6 +1,7 @@
 package org.example.lesson_13.home_work_13.task_1;
-
+//+
 public class Calculator {
+    //обычно тут идет еще пустая строка между классом и методом
     public double calculate(double num1, double num2, Operation operation) {
         return operation.operate(num1, num2);
     }
