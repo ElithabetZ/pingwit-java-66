@@ -3,6 +3,7 @@ package org.example.lesson_13.home_work_13.task_2;
 import java.util.Objects;
 
 public class Apple extends Product{
+    //можно было цвет как enum сделать
     private String color;
     public Apple(String name, double price, int quantity, String color) {
         super(name, price, quantity);
