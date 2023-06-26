@@ -9,6 +9,7 @@ public class Cart {
         this.products = products;
     }
 
+    //можно было еще как вариант использовать Arrays.copyOf/System.arraycopy
     public void addProduct(Product product) {
         Product[] temp = new Product[this.products.length + 1];
         for (int i = 0; i < this.products.length; i++) {
@@ -22,6 +23,14 @@ public class Cart {
         Product[] temp = new Product[this.products.length - 1];
         int tempIteration = 0;
         for (int i = 0; i < this.products.length; i++) {
+            /*
+                можно сократить:
+                 for (int i = 0; i < this.products.length; i++) {
+                    if (!temp[i].equals(product)) {
+                    temp[tempIteration++] = temp[i];
+                    }
+                }
+            */
             if (this.products[i].equals(product)) {
                 continue;
             } else {
