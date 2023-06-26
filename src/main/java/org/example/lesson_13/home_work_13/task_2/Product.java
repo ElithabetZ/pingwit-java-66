@@ -2,6 +2,7 @@ package org.example.lesson_13.home_work_13.task_2;
 
 import java.util.Objects;
 
+//+
 public abstract class Product {
     private String name;
     private double price;
