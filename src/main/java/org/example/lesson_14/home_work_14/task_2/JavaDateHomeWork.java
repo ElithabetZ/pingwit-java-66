@@ -14,6 +14,7 @@ import java.util.Set;
  */
 public class JavaDateHomeWork {
     public static void main(String[] args) {
+        //у тебя сканнер создается 2 раза в каждом из методов. Создай его здесь и просто передавай в параметрах
         LocalDateTime userTime = LocalDateTime.of(getDate(), getTime());
         ZonedDateTime outputTimeOne = userTime.atZone(ZoneId.of("America/Marigot"));
         System.out.println(outputTimeOne + " now in America/Marigot");
