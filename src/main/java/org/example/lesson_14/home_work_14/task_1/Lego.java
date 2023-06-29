@@ -2,7 +2,7 @@ package org.example.lesson_14.home_work_14.task_1;
 
 public class Lego {
 
-    @NotEmptyTwo
+    @NotEmptyTwo//страннок название аннотации
     private String type;
     @Size(min = 1, max = 11)
     private Integer elementQuantity;
