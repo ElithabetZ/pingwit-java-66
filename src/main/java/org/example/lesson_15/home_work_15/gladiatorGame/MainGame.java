@@ -1,7 +1,7 @@
 package org.example.lesson_15.home_work_15.gladiatorGame;
 
 import java.util.Scanner;
-
+//отлично, хорошо сделано!
 public class MainGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
