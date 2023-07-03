@@ -8,6 +8,7 @@ import java.util.Scanner;
 которое будет выдано, если знаменатель равен нулю.
  */
 public class DivisionZero {
+    //ввод полтзователя тоже нужно в отдельный метод
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Type numerator");
