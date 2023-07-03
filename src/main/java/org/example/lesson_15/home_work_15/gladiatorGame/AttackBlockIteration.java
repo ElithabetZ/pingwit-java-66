@@ -2,7 +2,7 @@ package org.example.lesson_15.home_work_15.gladiatorGame;
 
 import java.util.Random;
 import java.util.Scanner;
-
+//+
 public class AttackBlockIteration {
 
     private int firstGladiatorScore;
