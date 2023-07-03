@@ -8,6 +8,7 @@ import java.util.Scanner;
 простым или нет. Если параметр меньше или равен нулю, создайте исключение
 IllegalArgumentException.
  */
+//+
 public class IsSimple {
 
     public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class IsSimple {
         int number = scan.nextInt();
         System.out.println(isPrime(number));
     }
-
+//почитай еще про single return point
     public static boolean isPrime(int number) {
         if (number <= 1) {
             throw new IllegalArgumentException("Number must be greater than one");
