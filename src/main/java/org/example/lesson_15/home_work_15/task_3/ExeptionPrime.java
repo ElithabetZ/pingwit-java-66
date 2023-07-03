@@ -1,5 +1,6 @@
 package org.example.lesson_15.home_work_15.task_3;
-
+//всегда сначала название, а потом само слово Exception
+//то есть PrimeException
 public class ExeptionPrime extends Exception{
 
     private int number;
