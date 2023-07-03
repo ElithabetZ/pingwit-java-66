@@ -10,11 +10,12 @@ public class Combat {
     public Combat(Gladiator firstGladiator, Gladiator secondGladiator) {
         this.firstGladiator = firstGladiator;
         this.secondGladiator = secondGladiator;
-        this.firstGladiatorScore = 0;
+        this.firstGladiatorScore = 0;//оно и так по дефолту будет 0
         this.secondGladiatorScore = 0;
     }
 
     public void fight() {
+        //4 - константа - health, например
         while (firstGladiatorScore < 4 && secondGladiatorScore < 4) {
             AttackBlockIteration round = new AttackBlockIteration(firstGladiatorScore, secondGladiatorScore);
             firstGladiatorScore = round.resultOfAttack();
