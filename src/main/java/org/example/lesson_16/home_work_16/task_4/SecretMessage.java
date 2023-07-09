@@ -6,6 +6,7 @@ import java.io.*;
 Секретный файл. Скачайте любую картинку и запишите в нее секретное сообщение, не забудьте поставить append flag в значение true.
 Затем это сообщение нужно прочитать из файла и вывести на экран
  */
+//+
 public class SecretMessage {
 
     private static final String FILE_PATH = "src/main/java/org/example/lesson_16/home_work_16/task_4/photo_2023-07-04_21-07-27.jpg";
