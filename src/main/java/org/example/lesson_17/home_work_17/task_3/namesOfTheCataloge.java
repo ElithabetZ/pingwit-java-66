@@ -6,7 +6,7 @@ public class namesOfTheCataloge {
 
     private static final String PATH = "C:/Users/Spedi/Documents/Java/pingwit-java-66";
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         File folder = new File(PATH);
         File[] listOfFiles = folder.listFiles();
         listOfFiles(listOfFiles);
