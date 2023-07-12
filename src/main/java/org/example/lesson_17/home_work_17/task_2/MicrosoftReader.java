@@ -13,9 +13,10 @@ import java.util.Scanner;
 Написать программу, которая считает сколько раз в тексте MS Word документа встретится слово.
 Документ и выбор слова на ваше усмотрение.
  */
+//++
 public class MicrosoftReader {
 
-    private static final String PATH = "src/main/java/org/example/lesson_17/home_work_17/task_2/Try.docx";
+    private static final String PATH = "src/main/java/org/example/lesson_17/home_work_17/task_2/Try.docx";//обычно файлы с малькой буквы именуют
 
     public static void main(String[] args) {
         File docs = new File(PATH);

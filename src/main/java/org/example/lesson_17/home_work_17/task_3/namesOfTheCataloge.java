@@ -1,7 +1,8 @@
 package org.example.lesson_17.home_work_17.task_3;
 
 import java.io.File;
-
+//Имя класса с большой буквы!
+//А так ++
 public class namesOfTheCataloge {
 
     private static final String PATH = "C:/Users/Spedi/Documents/Java/pingwit-java-66";
