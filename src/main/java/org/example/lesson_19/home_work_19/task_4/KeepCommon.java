@@ -4,6 +4,7 @@ import java.util.ArrayList;
 /*
 Есть две коллекции, нужно оставить в первой только те, которые есть во второй
  */
+//+
 public class KeepCommon {
 
     public static void main(String[] args) {
