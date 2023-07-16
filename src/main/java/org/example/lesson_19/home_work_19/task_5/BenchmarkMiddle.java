@@ -8,26 +8,28 @@ import java.util.LinkedList;
 Нужно написать бенчмарк, который бы показал скорость удаления из СЕРЕДИНЫ у двух этих листов
 Удалить нужно все элементы
  */
+//и как результаты?
 public class BenchmarkMiddle {
     public static void main(String[] args) {
 
-        int iterations = 10000;
+        int iterations = 10000;//100000
+        //List
         ArrayList<Integer> arrayList = new ArrayList<>();
         LinkedList<Integer> linkedList = new LinkedList<>();
         for (int i = 0; i < iterations; i++) {
             arrayList.add(i);
             linkedList.add(i);
         }
-
+        //startAL
         long start = System.currentTimeMillis();
         while (!arrayList.isEmpty()) {
             arrayList.remove(arrayList.size() / 2);
         }
+        //finishAL
         long str1Finish = System.currentTimeMillis();
         long result1 = str1Finish - start;
         System.out.println("ArrayList: " + result1);
-
-
+        //startLL
         long start1 = System.currentTimeMillis();
         while (!linkedList.isEmpty()) {
             linkedList.remove(linkedList.size() / 2);
