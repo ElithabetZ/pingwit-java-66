@@ -10,8 +10,9 @@ import java.util.ArrayList;
 public class DeleteCommon {
 
     public static void main(String[] args) {
+        //List
         ArrayList<String> langToStart = new ArrayList<>();
-        String[] arrayLangToStart = {"SQl", "Java", "Python"};
+        String[] arrayLangToStart = {"SQl", "Java", "Python"};//можно сразу в list, но так красивей, понимаю:) Почитай про List.of
         fillArray(arrayLangToStart, langToStart);
         System.out.println("Languages to start with: " + langToStart);
 
