@@ -2,12 +2,12 @@ package org.example.lesson_19.home_work_19.task_6;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
-
+//комменты такие же, как и в прошлом - неймино startAL и т.д
 public class BenchmarkBeggining {
 
     public static void main(String[] args) {
 
-        int iterations = 10000;
+        int iterations = 10000;//100000
         ArrayList<Integer> arrayList = new ArrayList<>();
         LinkedList<Integer> linkedList = new LinkedList<>();
         for (int i = 0; i < iterations; i++) {
