@@ -13,20 +13,20 @@ import java.util.Iterator;
 public class IntegerArray {
 
     public static void main(String[] args) {
-
+        //List
         ArrayList<Integer> array = new ArrayList<>();
         fillArrayList(array);
         System.out.println(array);
         removeAllEven(array);
         System.out.println(array);
     }
-
-    public static void fillArrayList(ArrayList<Integer> array) {
+    //initListWithNumbers
+    public static void fillArrayList(ArrayList<Integer> array) {//List
         for (int i = 1; i <= 100; i++) {
             array.add(0, i);
         }
     }
-
+    //+
     public static void removeAllEven(ArrayList<Integer> array){
         Iterator<Integer> iterator = array.iterator();
         while (iterator.hasNext()) {

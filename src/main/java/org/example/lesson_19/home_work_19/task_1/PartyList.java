@@ -11,8 +11,9 @@ import java.util.Scanner;
 public class PartyList {
 
     public static void main(String[] args) {
-
+        //может List использовать?)
         String[] partyNames = {"Mike", "Anne", "Luke", "Grage"};
+        //List<String>
         ArrayList<String> partyList = new ArrayList<>();
         fillListOfGuests(partyNames, partyList);
         String name = getName();
