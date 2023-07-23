@@ -55,6 +55,10 @@ public class Library {
         }
     }
 
+    public Book getBook(Integer index) {
+        return books.get(index);
+    }
+
     @Override
     public String toString() {
         return "Library books" + "\n" +
