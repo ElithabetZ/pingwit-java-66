@@ -12,16 +12,16 @@ public class BenchmarkMiddle {
     public static void main(String[] args) {
 
         int iterations = 10000;
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        LinkedList<Integer> linkedList = new LinkedList<>();
+        ArrayList<String> arrayList = new ArrayList<>();
+        LinkedList<String> linkedList = new LinkedList<>();
         for (int i = 0; i < iterations; i++) {
-            arrayList.add(i);
-            linkedList.add(i);
+            arrayList.add("a");
+            linkedList.add("a");
         }
 
         long start = System.currentTimeMillis();
         while (!arrayList.isEmpty()) {
-            arrayList.remove(arrayList.size() / 2);
+            arrayList.remove("a");
         }
         long str1Finish = System.currentTimeMillis();
         long result1 = str1Finish - start;
@@ -30,7 +30,7 @@ public class BenchmarkMiddle {
 
         long start1 = System.currentTimeMillis();
         while (!linkedList.isEmpty()) {
-            linkedList.remove(linkedList.size() / 2);
+            linkedList.remove( "a");
         }
         long str2Finish = System.currentTimeMillis();
         long result2 = str2Finish - start1;

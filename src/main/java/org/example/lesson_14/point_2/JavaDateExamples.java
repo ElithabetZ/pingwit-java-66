@@ -20,6 +20,7 @@ public class JavaDateExamples {
 
         LocalDate myTime = LocalDate.of(2023, 1, 23);
         LocalDate plusYearDate = myTime.plusYears(4);
+        LocalDate plusMonthDate = myTime.plusDays(4);
 
 
         LocalDateTime nowTime = LocalDateTime.now();
