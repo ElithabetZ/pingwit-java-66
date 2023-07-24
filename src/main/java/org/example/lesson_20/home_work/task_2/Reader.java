@@ -13,7 +13,7 @@ public class Reader<T> {
 
     private Set<Book> books;
 
-    private boolean isAdded;
+    private boolean isAdded;//думаю, что это лишнее
 
     public Reader(T id, String name, String surname) {
         this.id = id;
@@ -29,6 +29,8 @@ public class Reader<T> {
     public void addBook(Book book) {
         if (isAdded) {
             if (book.isAdded()) {
+                //LocalDate.of(0,1,1) -  константа... Представь, что в книге это поменяется. Или в библиотеке, то весь твой код перестанет работать...
+                //и зачем это надо?
                 if (book.getExpiration().equals(LocalDate.of(0,1,1))) {
                     books.add(book);
                     LocalDate expiration = LocalDate.now().plusDays(30);
@@ -37,7 +39,7 @@ public class Reader<T> {
                     System.out.println("This book is unavailable now");
                 }
             } else {
-                System.out.println("There are no such book in the library");
+                System.out.println("There are no such book in the library");//There is no such book
             }
         } else {
             System.out.println("You must get a library membership at first!");
@@ -48,7 +50,7 @@ public class Reader<T> {
         if (isAdded) {
             if (books.contains(book)) {
                 books.remove(book);
-                book.setExpiration(LocalDate.of(0, 1, 1));
+                book.setExpiration(LocalDate.of(0, 1, 1));//no comments, same
             } else {
                 System.out.println("You haven't got this book");
             }
