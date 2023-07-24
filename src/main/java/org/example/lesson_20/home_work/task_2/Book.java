@@ -10,13 +10,13 @@ public class Book<T> {
     private String title;
     private String author;
     private LocalDate expiration;
-    private boolean isAdded;
+    private boolean isAdded;//used, isUsed
 
     public Book(T id, String title, String author) {
         this.id = id;
         this.title = title;
         this.author = author;
-        this.expiration = LocalDate.of(0,1,1);
+        this.expiration = LocalDate.of(0,1,1);//такие вещи в константы
     }
 
     public void setAdded(boolean added) {
