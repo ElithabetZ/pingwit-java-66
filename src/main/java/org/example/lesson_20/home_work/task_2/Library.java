@@ -1,7 +1,7 @@
 package org.example.lesson_20.home_work.task_2;
 
 import java.time.LocalDate;
-import java.util.*;//импорт со * - очень плохая практика. Проверяй, чтобы классы были написаны явно
+import java.util.*;//импорт со * - очень плохая практика. Проверяй, чтобы классы были написаны явно - https://stackoverflow.com/questions/147454/why-is-using-a-wild-card-with-a-java-import-statement-bad#:~:text=code%20more%20cleaner-,Using%20.,is%20available%20in%20both%20packages.
 
 public class Library {
 
