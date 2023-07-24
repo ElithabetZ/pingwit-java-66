@@ -19,6 +19,10 @@ public class Library {
     }
 
     public void removeBook(Book book) {
+        //LocalDate.of(0, 1, 1) - это константа в классе Book
+        //но мне эта логика не нравится. Лучше сделать так:
+        //в методе addBook делать setExpiration(LocalDate.now() + какой-то период (месяц, два и тп), который будет константой
+        //а тут ты уже будешь проверять, что если текущая дата после expiration, то надо бы книжечку вернуть)
         if (book.getExpiration().equals(LocalDate.of(0, 1, 1))) {
             books.remove(book);
             book.setAdded(false);
@@ -29,10 +33,11 @@ public class Library {
 
     public void addReader(Reader reader) {
         readers.add(reader);
-        reader.setAdded(true);
+        reader.setAdded(true);//а зачем ридеру это поле?? Можно просто проверить, есть ли он в коллекции
     }
 
     public void removeReader(Reader reader) {
+        //когда удаляешь читателя, то надо чтобы он все книги вернул в библиотеку
         if (reader.allBooks().size() == 0) {
             readers.remove(reader);
             reader.setAdded(false);
