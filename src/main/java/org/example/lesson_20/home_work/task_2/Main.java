@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+//хотелось бы консольное приложение...
+//и чтобы книги были из файла, например - https://mkyong.com/java/how-to-read-an-object-from-file-in-java/ P.S мы это проходили на 16 занятии
 public class Main {
 
     public static void main(String[] args) {
