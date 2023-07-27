@@ -1,5 +1,5 @@
 package org.example.lesson_21.home_work_21.task_2;
-
+//equals() and hashcode()?
 public class Student implements Comparable<Student> {
     private String name;
     private String surname;
