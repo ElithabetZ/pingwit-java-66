@@ -8,6 +8,8 @@ import java.util.TreeSet;
 /*
 Есть TreeSet чисел, нужно отсортировать его в обратном порядке
  */
+//Comparator<Object> reversedComparator = Collections.reverseOrder(); 
+//Set<Integer> treeReversed = new TreeSet<>(reversedComparator);
 public class ReverseOrder {
     public static void main(String[] args) {
         int counter = 5;
