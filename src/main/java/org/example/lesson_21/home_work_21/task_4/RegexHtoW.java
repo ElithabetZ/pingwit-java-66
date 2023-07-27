@@ -16,20 +16,21 @@ public class RegexHtoW {
         String regex = "[H-W]";
         Pattern pattern = Pattern.compile(regex);
         for (String name: names) {
+            //match -> matcher
             Matcher match = pattern.matcher(name);
             if(match.find()){
                 System.out.println(name);
             }
         }
     }
-
-    public static void getNames(Set<String> set) {
+    //аналогично - get - возращает что-то
+    public static void getNames(Set<String> set) {//set - непонятное название
         Scanner scan = new Scanner(System.in);
         boolean addMore = true;
         while (addMore) {
             System.out.println("Type name");
             set.add(scan.next());
-            System.out.println("Do you want add more? YES = 1, NO = 0");
+            System.out.println("Do you want add more? YES = 1, NO = 0");//может лучше вводить, пока пользователь не напишет какой-то спец символ?
             if (scan.nextInt() == 0) {
                 addMore = false;
             }
