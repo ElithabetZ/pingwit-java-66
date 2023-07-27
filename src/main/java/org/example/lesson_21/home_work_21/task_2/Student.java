@@ -5,6 +5,7 @@ public class Student implements Comparable<Student> {
     private String surname;
     private int id;
 
+    //а чего полное имя, а не просто Student?
     public int compareTo(org.example.lesson_21.home_work_21.task_2.Student student) {
         int nameResult = this.name.compareTo(student.name);
         if (nameResult != 0) {
