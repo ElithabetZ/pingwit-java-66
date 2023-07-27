@@ -5,8 +5,9 @@ import java.util.Objects;
 public class Fruit implements Comparable<Fruit>{
 
     private String name;
+    //можно и просто примитив тут использовать
     private Double weight;
-    private FruitType type;
+    private FruitType type;//cool!
 
     public Fruit() {
     }
