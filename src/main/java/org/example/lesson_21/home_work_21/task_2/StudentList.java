@@ -14,6 +14,7 @@ public class StudentList {
         System.out.println(students);
     }
 
+    //cool!
     public static void addStudents(Set<Student> students) {
         Scanner scan = new Scanner(System.in);
         int id = 1;
