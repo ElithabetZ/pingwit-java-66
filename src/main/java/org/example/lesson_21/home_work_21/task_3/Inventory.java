@@ -16,7 +16,7 @@ public class Inventory {
 
     public static void main(String[] args) {
         List<Fruit> fruits = new ArrayList<>();
-        ч(fruits);
+        getFruits(fruits);
         System.out.println(fruits);
         Comparator<Fruit> fruitNameComparator = new FruitNameComparator();
         Set<Fruit> inventoryFruits = new TreeSet<>(fruitNameComparator);
