@@ -6,7 +6,7 @@ package org.example.lesson_22.home_work_22.task_3;
 //+
 public class LambdaExercise {
     public static void main(String[] args) {
-
+//empty line
         UserBuilder userBuilder = User::new;
         User user = userBuilder.supply("Mike");
         System.out.println(user.getName());
