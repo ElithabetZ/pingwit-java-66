@@ -1,9 +1,7 @@
 package org.example.lesson_22.home_work_22.task_5;
 
-import org.example.lesson_21.home_work_21.task_3.Fruit;
-import org.example.lesson_21.home_work_21.task_3.FruitNameComparator;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /*
 Есть класс Sportsman, у которого есть поля имя и скорость, с которой он бежит, а также коллекция медалей.

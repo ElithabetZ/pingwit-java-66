@@ -6,6 +6,6 @@ import java.util.Comparator;
 
 public class SporstmanComparator implements Comparator<Sportsman> {
     public int compare(Sportsman f1, Sportsman f2) {
-        return f1.getCurrentResult().compareTo(f2.getCurrentResult());
+        return -f1.getCurrentResult().compareTo(f2.getCurrentResult());
     }
 }
