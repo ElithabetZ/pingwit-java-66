@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
+//можно еще было  Comparator<String> stringComparator = (String first, String second) ->  -1 * first.compareTo(second)
 public class ReverseOrderComparator {
     public static void main(String[] args) {
         List<String> listUser = new ArrayList<>();

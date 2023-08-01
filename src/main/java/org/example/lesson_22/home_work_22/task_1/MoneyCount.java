@@ -8,6 +8,11 @@ import java.util.Scanner;
 Написать функцию перевода числа в строку с добавлением денежной единицы. Например, 5 -> 5 рублей.
 Если получится, то учесть правильность окончаний, если нет, то можно сократить до "руб".
  */
+//как-то все слишком сложно...
+//Ожидалось что-то типо такого:
+//Parse parse = integer -> integer + " RUB";
+//String result = showRUB(parse, 4);
+//System.out.println(result);
 public class MoneyCount {
     public static void main(String[] args) {
         int userNumber = getNumebr();

@@ -10,6 +10,7 @@ import java.util.List;
 Дистанция - 600м. Отфильтровать тех, кто пробежал медленнее всех, а первым трем вручить медали - золото, серебро и бронзу (enum).
 
  */
+// посмотрим
 public class Main {
     public static void main(String[] args) {
         int kmRace = 600;

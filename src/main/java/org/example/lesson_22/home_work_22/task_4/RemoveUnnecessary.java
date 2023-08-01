@@ -11,12 +11,25 @@ import java.util.function.Predicate;
 /*
 Создать метод, который бы принимал на вход List<User> и предикат, по которому все юзеры, у которых имена начинаются с A,P,E удалялись бы из этого листа
  */
+//название класса не очень
 public class RemoveUnnecessary {
     public static void main(String[] args) {
-
+//пустота
         List<User> listOfUsers = new ArrayList<>();
         addNames(listOfUsers);
         System.out.println(listOfUsers);
+        //можно было Predicate<String> predicate = name -> name.startsWith("A") || name.startsWith("P") || name.startsWith("P");
+        /*
+        Iterator<User> iterator = users.iterator();
+        while (iterator.hasNext()) {
+            User user = iterator.next();
+            if (predicate.test(user.getName())) {
+                iterator.remove();
+            }
+        }
+        Так гораздо понятнее будет. У тебя все нагромождено и немного сложно для понимания
+        Выноси в отдельные методы тогда уже
+        */
         Predicate<List<User>> removeBuilder = list ->{
             String[] arrayExeption = {"A", "P", "E"};
             boolean isRemove = false;
