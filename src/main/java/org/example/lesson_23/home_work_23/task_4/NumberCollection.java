@@ -7,6 +7,7 @@ import java.util.Optional;
         Есть коллекция чисел, найти первое, которое будет больше 22.
 
  */
+// форматируй код!
 public class NumberCollection {
 
     public static void main(String[] args) {
