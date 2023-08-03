@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 Task 6 (distinct)
 Есть коллекция телефонов, нужно убрать все повторяющиеся
  */
+//+
 public class UniquPhones {
 
     public static void main(String[] args) {
