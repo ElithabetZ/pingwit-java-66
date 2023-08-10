@@ -4,13 +4,12 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class OrderServiceImpl {
+public class OrderServiceImpl implements OrderService{
 
-    public Optional findById(List<Order> orders, int id){
-        List<Order> list = orders.stream()
+    public Optional<Order> findById(List<Order> orders, int id){
+        Optional<Order> order = orders.stream()
                 .filter(o->o.id() == id)
-                .collect(Collectors.toList());
-        return Optional.of(list.get(0));
+                .findAny();
+        return order;
+        }
     }
-
-}
