@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 которой ключ - это производитель
 вэлью - это кол-во телефонов этого производителя в исходной коллекции
  */
+//+
 public class MapPhoneCollection {
 
     public static void main(String[] args) {

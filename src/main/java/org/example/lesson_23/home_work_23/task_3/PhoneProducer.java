@@ -20,6 +20,7 @@ public class PhoneProducer {
 
         List<String> producers = phones.stream()
                 .map(Phone::producer)
+            //лучше сделать коллекцию из этих слов и вызывать у этой коллекции contains
                 .filter(producer->producer.equals("Apple")||producer.equals("Samsung")||producer.equals("Xiaomi"))
                 .collect(Collectors.toList());
         System.out.println(producers);

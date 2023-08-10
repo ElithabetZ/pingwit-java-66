@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 Task 7
 Есть коллекция телефонов, нужно сгруппировать по компании и вывести на экран
  */
+//форматирование
 public class GroupByProducer {
 
     public static void main(String[] args) {

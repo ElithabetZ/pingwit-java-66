@@ -6,6 +6,7 @@ import java.util.NoSuchElementException;
 Task 2 (max, String::compareTo / Comparator.naturalOrder())
 Есть коллекция строк, нужно найти строку с максимальной длинной.
  */
+//круто, что прочитала про новое :)
 public class MaximumValue {
 
     public static void main(String[] args) {

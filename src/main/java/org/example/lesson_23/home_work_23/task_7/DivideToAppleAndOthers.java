@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 Task 8
 Есть коллекция телефонов. Нужно разделить на две части, в одной только айфоны, в другой остальные производители.
  */
+//+
 public class DivideToAppleAndOthers {
 
     public static void main(String[] args) {
