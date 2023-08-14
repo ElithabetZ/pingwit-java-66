@@ -15,6 +15,7 @@ public class HotelRating {
                 new Hotel("Star", 4),
                 new Hotel("Moon", 5),
                 new Hotel("Shine", 3));
+        //здесь просится max - hotelCatalog.stream().max(Comparator.comparingInt(Hotel::getRating))
         List<Hotel> maxRateHotel = cataloge.stream()
                 .sorted(Comparator.comparing(Hotel::rage).reversed())
                 .limit(1)
