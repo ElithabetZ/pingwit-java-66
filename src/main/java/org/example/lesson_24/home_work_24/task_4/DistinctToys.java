@@ -10,7 +10,7 @@ import java.util.List;
 При помощи метода distinct и стримов посчитайте количество уникальных игрушек.
  */
 public class DistinctToys {
-
+    //+
     public static void main(String[] args) {
         List<TreeToy> listOfTreeToys = Arrays.asList(
                 new TreeToy("Star", "blue", true),

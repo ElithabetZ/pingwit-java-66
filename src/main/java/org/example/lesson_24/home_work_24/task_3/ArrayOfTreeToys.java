@@ -16,9 +16,9 @@ public class ArrayOfTreeToys {
                 new TreeToy("Lolly", "pink", false),
                 new TreeToy("Train", "yellow", true)
         );
-
+        //allFastener
         boolean isAllFastener = listOfTreeToys.stream()
-                .allMatch(treeToy -> treeToy.fastener() == true);
+                .allMatch(treeToy -> treeToy.fastener() == true);//== true необязательно
         System.out.println("In this list of tree toys all toys have fastener?  == " + isAllFastener);
     }
 }
