@@ -1,3 +1,4 @@
+
 package org.example.lesson_25.home_work_25;
 
 import org.apache.commons.lang3.StringUtils;
@@ -59,7 +60,7 @@ public class WordExercise {
         titleRun.setFontSize(20);
     }
 
-    private static void createSubTitle(XWPFDocument file, String subTitleName){
+    private static void createSubTitle(XWPFDocument file, String subTitleName) {
         XWPFParagraph title = file.createParagraph();
         title.setAlignment(ParagraphAlignment.CENTER);
 
@@ -71,10 +72,10 @@ public class WordExercise {
         titleRun.setFontSize(16);
     }
 
-    private static void write(XWPFDocument file, String name){
-        try(FileOutputStream fos = new FileOutputStream(FILE_PATH+name+".docx")){
+    private static void write(XWPFDocument file, String name) {
+        try (FileOutputStream fos = new FileOutputStream(FILE_PATH + name + ".docx")) {
             file.write(fos);
-        } catch (IOException e){
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
