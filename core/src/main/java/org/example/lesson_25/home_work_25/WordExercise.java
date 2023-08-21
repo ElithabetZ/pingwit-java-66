@@ -34,6 +34,8 @@ public class WordExercise {
     }
 
     private static void createFile(XWPFDocument file) {
+        //отдельный метод на получение имени. Кто-то через консоль, кто-то имя файла из файла, кто-то еще откуда-то. 
+        //Сепарируй логику, делай независимое API:)
         Scanner scan = new Scanner(System.in);
         System.out.println("Please, type the Title");
         String title = scan.nextLine();
