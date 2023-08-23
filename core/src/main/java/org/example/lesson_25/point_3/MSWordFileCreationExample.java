@@ -10,11 +10,10 @@ import java.io.IOException;
 
 public class MSWordFileCreationExample {
 
-    private static final String FILE_PATH = "core/src/main/java/com/pingwit/core/les_25/classwork/point_3/meWordDocument.docx";
+    private static final String FILE_PATH = "core/src/main/java/org/example/lesson_25/point_3/meWordDocument.docx";
     public static void main(String[] args) {
         XWPFDocument document = new XWPFDocument();
         createTitle(document);
-
         write(document);
     }
 

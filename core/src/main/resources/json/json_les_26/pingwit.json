@@ -1,0 +1,20 @@
+{
+  "name": "pingwit",
+  "courseLenght": 6.5,
+  "students": [
+    {
+      "name": "Anna"
+    },
+    {
+      "name": "Mike"
+    }
+  ],
+  "program": {
+    "name": "Java",
+    "lectures": [
+      "lesson1",
+      "lesson2",
+      "lesson3"
+    ]
+  }
+}

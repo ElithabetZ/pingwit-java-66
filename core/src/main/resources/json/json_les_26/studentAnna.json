@@ -1,0 +1,16 @@
+{
+  "name": "Anna",
+  "surname": "Kovalska",
+  "groupNum": 1356,
+  "address": {
+    "city": "Wroclaw",
+    "street": "A. Agnieszkiewicza",
+    "houseNumber": 8,
+    "flatNumber": 22
+  },
+  "contact": {
+    "phoneNumber": 895785785,
+    "email": "AnnaKovalska@gmail.com"
+  },
+  "favSubjects":["Music","Math", "Art"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Jack",
+  "surname": "Sparrow",
+  "groupNum": 1356,
+  "address": {
+    "city": "Warsaw",
+    "street": "A. Magiera",
+    "houseNumber": 8,
+    "flatNumber": 31
+  },
+  "contact": {
+    "phoneNumber": 789563785,
+    "email": "JackSparrow@gmail.com"
+  },
+  "favSubjects":["Pe","English","Math"]
+}

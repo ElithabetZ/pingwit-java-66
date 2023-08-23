@@ -1,0 +1,16 @@
+{
+  "name": "John",
+  "surname": "Muerej",
+  "groupNum": 1356,
+  "address": {
+    "city": "Lublin",
+    "street": "A. Humuna",
+    "houseNumber": 12,
+    "flatNumber": 10
+  },
+  "contact": {
+    "phoneNumber": 854659856,
+    "email": "JohnMuerej@gmail.com"
+  },
+  "favSubjects":["Pe","Math", "Art"]
+}
