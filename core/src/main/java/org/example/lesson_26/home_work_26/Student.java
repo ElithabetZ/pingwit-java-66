@@ -2,7 +2,7 @@ package org.example.lesson_26.home_work_26;
 
 import java.util.List;
 import java.util.Objects;
-
+//+
 public class Student {
 
     private String name;
