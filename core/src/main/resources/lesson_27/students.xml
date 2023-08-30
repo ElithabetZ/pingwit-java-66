@@ -1,0 +1,39 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<students>
+    <student groupNumber = "12">
+        <name>Mike</name>
+        <surname>Kolin</surname>
+        <faculty>Math</faculty>
+        <address>
+            <street>Lukanova</street>
+            <streetNumber>13</streetNumber>
+        </address>
+    </student>
+    <student groupNumber = "2">
+        <name>Luiza</name>
+        <surname>Nakot</surname>
+        <faculty>Art</faculty>
+        <address>
+            <street>Mikolav</street>
+            <streetNumber>145</streetNumber>
+        </address>
+    </student>
+    <student groupNumber = "5">
+        <name>Anna</name>
+        <surname>Bolen</surname>
+        <faculty>Science</faculty>
+        <address>
+            <street>Hernako</street>
+            <streetNumber>5</streetNumber>
+        </address>
+    </student>
+    <student groupNumber = "13">
+        <name>Tom</name>
+        <surname>Lendon</surname>
+        <faculty>Finance</faculty>
+        <address>
+            <street>Nutolka</street>
+            <streetNumber>1</streetNumber>
+        </address>
+    </student>
+</students>
