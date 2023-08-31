@@ -6,7 +6,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.*;
+import java.io.*;//не используй такой импорт
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
