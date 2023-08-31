@@ -1,7 +1,7 @@
 package org.example.lesson_27.home_work_27.task_2;
 
 import java.util.Objects;
-
+//record :)
 public class Film {
 
     private String name;
