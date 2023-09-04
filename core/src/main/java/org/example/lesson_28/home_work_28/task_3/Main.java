@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void main(String[] args) {
-        Uniwersity uniwersity = new Uniwersity();
+        Uniwersity uniwersity = new Uniwersity();//university
 
         Book gatsby = new Book("The Great Gatsby", 1925);
         Book mockingbird = new Book("To Kill a Mockingbird", 1960);
@@ -32,8 +32,13 @@ public class Main {
 
     }
 
+    //этот метод должен вовзвращать эти книги. А затем уже в отдельном методе печатать
+    //у твоего метода слишком много обязанностей
+    //Three - абстрактно. Надо чтобы это был параметр в методе. А потом захочешь поддерживать функциональность
+    //топ 1, топ 2 и т.д. И придется новый метод писать?)
     public static void topThreeBooks(Uniwersity uniwersity){
         List<Book> books = new ArrayList<>();
+        //Отдельный метод. Это точно не должен делать topThreeBooks (getTopBooks)
         for (Student student: uniwersity.getStudents()) {
             for (Book book: student.bookList()) {
                 if(books.isEmpty()){
