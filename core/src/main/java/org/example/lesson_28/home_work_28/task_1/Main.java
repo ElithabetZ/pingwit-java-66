@@ -5,6 +5,7 @@ package org.example.lesson_28.home_work_28.task_1;
 запустить его в отдельном потоке. Поток main должен дождаться окончания работы дочернего потока
 и затем вывести на экран сообщение о том, что главный поток завершен
  */
+//+
 public class Main {
     public static void main(String[] args) {
         RunnableClass runnableClass = new RunnableClass();
