@@ -10,6 +10,11 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         Warehouse warehouse = new Warehouse();
+        /*
+           Я бы сделала так (нейминг):
+           ToySynchronizedService -> ToyRunnableService
+           ToySynchronized -> ToySynchronizedService
+        */
         ToySynchronized toySynchronized = new ToySynchronized();
         ToySynchronizedService service = new ToySynchronizedService(toySynchronized, warehouse, 1000);
         ToySynchronizedService service2 = new ToySynchronizedService(toySynchronized, warehouse, 50);
