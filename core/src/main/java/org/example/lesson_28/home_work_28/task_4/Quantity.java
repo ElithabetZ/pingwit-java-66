@@ -1,7 +1,7 @@
 package org.example.lesson_28.home_work_28.task_4;
 
 import java.util.Objects;
-
+//можно было не заводить отдельный класс на количество
 public class Quantity {
     private int quantity;
 
