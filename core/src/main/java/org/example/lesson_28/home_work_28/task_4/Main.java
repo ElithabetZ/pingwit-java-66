@@ -12,13 +12,13 @@ import java.util.List;
 Сделать коллекцией пути к файлам и потом посчитать сколько в коллекции, сам подсчет я уже написала
  */
 public class Main {
-    private static final String FILE_PATH_1 = "core/src/main/resources/lesson_28/Example1.txt";
+    private static final String FILE_PATH_1 = "core/src/main/resources/lesson_28/Example1.txt";//файлы с маленькой буквы
     private static final String FILE_PATH_2 = "core/src/main/resources/lesson_28/Example2.txt";
 
     public static void main(String[] args) {
 
-        Quantity allWords = new Quantity();
-        QuantitySunchronized quantitySunch = new QuantitySunchronized();
+        Quantity allWords = new Quantity();//это не надо. Либо AtomicInteger (пройдем сегодня), либо synchronized просто с int (то, что проходили)
+        QuantitySunchronized quantitySunch = new QuantitySunchronized();//это не надо
         List<String> resources = Arrays.asList(FILE_PATH_1, FILE_PATH_2);
         countWords(resources, allWords, quantitySunch);
     }
