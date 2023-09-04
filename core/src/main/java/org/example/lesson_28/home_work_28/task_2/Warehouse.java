@@ -7,7 +7,7 @@ import java.util.Objects;
 public class Warehouse {
 
     private List<Toy> toys;
-    private int quotity;
+    private int quotity;//quantity
 
     public Warehouse() {
         this.toys = new ArrayList<>();
