@@ -1,5 +1,5 @@
 package org.example.lesson_28.home_work_28.task_1;
-
+//+
 public class RunnableClass implements Runnable {
 
     @Override
