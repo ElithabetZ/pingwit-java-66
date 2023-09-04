@@ -10,7 +10,8 @@ import java.util.List;
 public class CountWords implements Runnable {
 
     private String path;
-    private Quantity quantity;
+    private Quantity quantity;//не обязательно отдельный класс. 
+    //Почитай про AtomicInteger и пакет java.util.concurrent.atomic в целом
     private QuantitySunchronized quantitySunch;
 
     public CountWords(String path, Quantity quantity, QuantitySunchronized quantitySunch) {
@@ -31,6 +32,7 @@ public class CountWords implements Runnable {
             }
             quantitySunch.writeContedWords(quantity,count);
         } catch (IOException e) {
+            // throw new RuntimeException("Exception while reading file. Details: ", e);
             throw new RuntimeException(e);
         }
     }
