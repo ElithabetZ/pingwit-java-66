@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class Uniwersity {
-    List<Student> students;
+    List<Student> students;//private??
 
     public List<Student> getStudents() {
         return students;
