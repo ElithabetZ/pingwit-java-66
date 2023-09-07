@@ -7,7 +7,8 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-
+//а что,если еще попрактиковать решить задачу через Callable? 1 поток - 1 файл
+//а так +
 public class CountWords implements Runnable{
 
     private String path;
