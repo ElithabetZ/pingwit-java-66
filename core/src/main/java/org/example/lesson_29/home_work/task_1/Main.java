@@ -24,6 +24,7 @@ public class Main {
     public static void countWords(List<String> resources) {
         AtomicInteger count = new AtomicInteger();
         for (String path : resources) {
+            //можно было попробовать создать через лямбу
             CountWords countWords = new CountWords(path);
             Thread thread = new Thread(countWords);
             thread.start();
