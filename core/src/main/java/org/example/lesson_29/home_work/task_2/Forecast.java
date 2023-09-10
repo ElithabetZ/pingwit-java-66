@@ -4,13 +4,20 @@ import java.util.Objects;
 
 public class Forecast {
     private String name;
+    //LocalDate
     private String curDate;
+    //double
     private String curTem;
+    //double?
     private String curFeels;
     private String curCloud;
+    //double?
     private String nightTemp;
+    //double?
     private String dayTemp;
+    //byte?int? и затем форматирование использовать
     private String chanceOfPrecipition;
+    //int?short?byte?
     private String uvIndex;
 
     public String getName() {
@@ -97,6 +104,7 @@ public class Forecast {
         return Objects.hash(name, curDate, curTem, curFeels, curCloud, nightTemp, dayTemp, chanceOfPrecipition, uvIndex);
     }
 
+    //лучше оставить обычную (стандартную реализацию), а это поместить в отдельный метод
     @Override
     public String toString() {
         return name + '\n' +
