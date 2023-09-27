@@ -1,0 +1,2 @@
+select * from students
+where name like 'A%' and surname like 'M%';

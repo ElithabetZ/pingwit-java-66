@@ -1,0 +1,5 @@
+insert into students(name, surname, active, birthday)
+values ('Mike', 'Kotsevich', true, '1990-09-05'),
+('Lisa', 'Kotlin', true, '1995-08-12'),
+('Vlad', 'Zawadzka', true, '1993-05-10'),
+('Anna', 'Meller', true, '1990-01-10');

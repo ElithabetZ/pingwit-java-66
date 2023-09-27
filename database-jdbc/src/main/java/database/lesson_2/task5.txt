@@ -1,0 +1,7 @@
+update students
+set java_version = 11
+where id > 3;
+
+update students
+set java_version = 17
+where id < 4;
