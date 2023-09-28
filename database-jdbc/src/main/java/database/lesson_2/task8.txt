@@ -1,2 +1,2 @@
 select * from students
-where name like 'A%' and surname like 'M%';
+where name like 'A%' and surname like 'M%'; --ИЛИ фамилия (OR)
