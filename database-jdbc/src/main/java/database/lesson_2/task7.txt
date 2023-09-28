@@ -2,4 +2,4 @@ alter table students
 alter column course type varchar(10);
 
 update students
-set course = concat('Java ', course);
+set course = concat('Java ', course); --Java-
