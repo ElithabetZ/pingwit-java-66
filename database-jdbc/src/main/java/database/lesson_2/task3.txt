@@ -1,2 +1,2 @@
-select id, name, surname, active, birthday from students
+select id, name, surname, active, birthday from students --from лучше на новую строчку (просто форматирование)
 where id > 2;
