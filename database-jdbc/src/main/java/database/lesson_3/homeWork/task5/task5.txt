@@ -1,0 +1,6 @@
+select subject.name, count(subject_id_student_id.student_id) as popularity
+from subject_id_student_id
+inner join subject
+on subject_id_student_id.subject_id = subject.id
+group by subject_id_student_id.subject_id, subject.name
+order by popularity desc, subject.name

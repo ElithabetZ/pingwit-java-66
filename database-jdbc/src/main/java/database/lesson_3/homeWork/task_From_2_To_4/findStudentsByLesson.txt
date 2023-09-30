@@ -1,0 +1,7 @@
+select *
+from student
+where id in(select subject_id_student_id.student_id
+from subject_id_student_id
+inner join subject
+on subject_id_student_id.subject_id = subject.id
+where subject.name = '%1$s');

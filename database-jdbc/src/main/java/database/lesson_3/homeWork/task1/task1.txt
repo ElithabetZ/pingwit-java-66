@@ -1,0 +1,1 @@
+docker exec -i  pingwit-postgres pg_restore -U postgres  -v -d students < lec_20_backup
