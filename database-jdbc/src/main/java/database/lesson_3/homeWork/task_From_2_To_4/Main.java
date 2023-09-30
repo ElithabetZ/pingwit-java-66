@@ -12,6 +12,7 @@ public class Main {
     private static String insertSubjectValues = "('Math', 75), ('Russian', 60), ('Geography', 50)";
     private static String insertsubject_id_student_idNames = "subject_id_student_id(subject_id, student_id)";
     private static String insertsubject_id_student_idValues = "(1,1),(1,2),(1,3),(2,4),(2,5),(2,6),(3,7),(3,6),(3,5),(3,1)";
+    
     public static void main(String[] args) {
         QueryManager queryManager = new QueryManager();
 
