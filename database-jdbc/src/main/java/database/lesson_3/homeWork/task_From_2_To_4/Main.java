@@ -16,13 +16,14 @@ public class Main {
     public static void main(String[] args) {
         QueryManager queryManager = new QueryManager();
 
+        //это ты, конечно, интересно придумала. Можно было просто в базе создать)) 👍
         queryManager.createTable(tableSubjectName, tableSubject);
         queryManager.insertQuery(insertSubjectNames, insertSubjectValues);
 
         queryManager.createTable(tablesubject_id_student_idName, tablesubject_id_student_id);
         queryManager.insertQuery(insertsubject_id_student_idNames, insertsubject_id_student_idValues);
 
-        List<Student> students = queryManager.findStudentsByLesson("Math");
+        List<Student> students = queryManager.findStudentsByLesson("Math");//find
         students.forEach(System.out::println);
     }
 }
