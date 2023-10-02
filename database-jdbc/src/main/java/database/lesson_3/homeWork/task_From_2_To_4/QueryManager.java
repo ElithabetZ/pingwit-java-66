@@ -9,12 +9,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class QueryManager {
-    private String CREATETABLE = "CREATE TABLE %1$s (%2$s) ";
-    private String INSERT = "INSERT INTO %1$s VALUES %2$s";
+    private String CREATETABLE = "CREATE TABLE %1$s (%2$s) ";//CREATE_TABLE_SQL
+    private String INSERT = "INSERT INTO %1$s VALUES %2$s";//INSETR_SQL
+    //файл должен быть в ресурсах. Но можно и просто константу. Или, например, какой-то отдельный класс - StudentQueries
     private static final String PATH_FINDSTUDENTSBYLESSON = "database-jdbc/src/main/java/database/lesson_3/homeWork/task_From_2_To_4/findStudentsByLesson.txt";
 
     public void createTable(String name, String query){
-        CREATETABLE = String.format(CREATETABLE, name, query);
+        CREATETABLE = String.format(CREATETABLE, name, query);//+!
         Connector connector = new Connector();
         connector.createTable(CREATETABLE, name);
     }
