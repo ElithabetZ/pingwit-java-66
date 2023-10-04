@@ -11,6 +11,7 @@
     <modules>
         <module>core</module>
         <module>database-jdbc</module>
+        <module>projects</module>
     </modules>
 
     <properties>
