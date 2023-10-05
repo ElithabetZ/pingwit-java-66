@@ -23,6 +23,7 @@ public class Connector {
         }
     }
 
+    //StockRepository<Stock> у которого есть метод List<Stock> getAll() { Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD); .....}
     public List<Stock> getStocks(String query){
         try {
             Class.forName("org.postgresql.Driver");
