@@ -23,7 +23,13 @@ public class Connector {
         }
     }
 
-    //StockRepository<Stock> у которого есть метод List<Stock> getAll() { Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD); .....}
+    //StockRepository<Stock> у которого есть метод List<Stock> getAll(int limit, int offset) { Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD); .....}
+    //ты что-то намудрила с заданием. Было достаточно в этом методе добавить limit offset в самом sql. Например select * from stocks limit ? offset ?
+    //и затем в методе, который вызывает этот метод, получать эти данные, передавая соот-ие параметры (проверять если не пусто, то увеличивать offset и т.п)
+    //получила данные - вызвала update этих данных - например void update (List<Integer> ids) {sql = update stocks set update_date_time = now() where id in (?::int[]);}
+    //только из ids надо сделать массив - ids.toArray(new Integer[0]). preparedStatement.setArray(1, твойМассив)
+    //
+    
     public List<Stock> getStocks(String query){
         try {
             Class.forName("org.postgresql.Driver");
