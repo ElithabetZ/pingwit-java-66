@@ -7,11 +7,23 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
+//где сервис?
 @Service
 public class EmployeeService {
 
+    /*
+    Зачем ты на каждый метод создала новый репозиторий? Можно было просто 
+    interface EmployeeRepository {
+        List<Employee> getAll();
+        List<Employee> getAll(Criteria criteria);
+    }
+
+    class EmployeeRepositoryImpl implements EmployeeRepository {
+       ....
+    }
+    */
     @Autowired
-    @Qualifier("getAll")
+    @Qualifier("getAll")//НЕТ Очень плохое имя бина!
     private EmployeeRepository employeeRepositoryAllImp;
 
     @Autowired
