@@ -8,7 +8,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.List;
-
+/*
+1. У тебя максимально странная структура проекта - во первых, все папки с маленькой буквы. Во вторых, папка service - все сервисные классы, 
+папка repository - классы, работающие с БД. Не надо getAll и что-то там. Это неправильно и абсолютно нечитабельно
+*/
 @SpringBootApplication
 public class ApplicationEmployee implements CommandLineRunner {
 
