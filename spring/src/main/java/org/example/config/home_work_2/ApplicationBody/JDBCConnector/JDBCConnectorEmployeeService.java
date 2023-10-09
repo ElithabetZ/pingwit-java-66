@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
+//это бин
 public class JDBCConnectorEmployeeService {
 
     EmployeeQueryManager queryManager = new EmployeeQueryManager();
@@ -17,6 +17,7 @@ public class JDBCConnectorEmployeeService {
         return employees;
     }
 
+    //getAllByCondition(COndition condition){....}!
     public List<Employee> getAllByName(String name) {
         String query = queryManager.getQUERYGETALLEMPLOYESSBYNAME();
         query = String.format(query, name);
