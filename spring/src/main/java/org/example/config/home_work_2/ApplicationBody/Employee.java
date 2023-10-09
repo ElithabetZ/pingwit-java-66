@@ -1,9 +1,9 @@
 package org.example.config.home_work_2.ApplicationBody;
 
 import java.util.Objects;
-
+//в папку entity/model
 public class Employee{
-
+//где private?
     Long id;
     String name;
     Integer ratePerHour;
