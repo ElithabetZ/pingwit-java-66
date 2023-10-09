@@ -10,7 +10,7 @@ import java.util.List;
 public class JDBCConnectorEmployeeService {
 
     EmployeeQueryManager queryManager = new EmployeeQueryManager();
-    private final String dbName = "employees";
+    private final String dbName = "employees";//dbName -> table
 
     public List<Employee> getAll() {
         List<Employee> employees = getEmployees(queryManager.getQUERYGETALLEMPLOYESS());
@@ -45,7 +45,7 @@ public class JDBCConnectorEmployeeService {
                 employeeList.add(employee);
             }
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(e);//создай свой эксепшен, напиши какое-то конкретное сообщение, но точно не так
         }
         return employeeList;
     }
