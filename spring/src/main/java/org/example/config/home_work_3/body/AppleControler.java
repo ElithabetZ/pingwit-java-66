@@ -18,13 +18,19 @@ public class AppleControler {
     @Autowired
     private AppleService appleService;
 
+    //можешь сразу на котроллер навесить, чтобы все методы были такими
     @GetMapping(consumes = "application/json")
     public List<Apple> getAll() {
         List<Apple> apples = appleService.getAll();
-        return apples;
+        return apples;//сразу return в 24 строке
     }
 
+    //name - не ресурс. Обычно так делают с id, а не с параметрами. Используй @RequestParam
+    //@GetMappint("/statistics"), @RequestParam String name
+    //А можно вообще расширить приложение и передавать Criteria criteria! Таким образом даешь пользователю возможность выбора, по чему базировать статистику
     @GetMapping("/{name}")
+    //название метода не отвечает тому, что он делает!
+    //calculateStatistics
     public Map<String, Integer> getByName(@PathVariable String name) {
         return appleService.getByName(name);
     }
