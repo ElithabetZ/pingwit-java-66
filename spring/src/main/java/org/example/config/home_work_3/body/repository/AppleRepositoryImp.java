@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public class AppleRepositoryImp implements AppleRepository{
 
-    @Qualifier("JdbcAppleConnector")
+    @Qualifier("JdbcAppleConnector")// @Qualifier("jdbcAppleConnector")
     private final JdbcConnector<Apple> jdbcConnector;
 
     public AppleRepositoryImp(JdbcAppleConnector jdbcConnector){
