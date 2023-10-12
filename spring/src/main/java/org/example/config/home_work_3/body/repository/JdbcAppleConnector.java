@@ -15,6 +15,7 @@ public class JdbcAppleConnector implements JdbcConnector<Apple>{
     private static final String PASSWORD = "root";
     private static final String QUERY = "select * from apple_warehouse";
 
+    //логика с коннекшеном везде будет дублироваться, поэтому ее лучше вынести в JdbcConnetror, а здесь просто переиспользовать (default метод, например)
     @Override
     public List<Apple> getAll() {
         try {
@@ -36,6 +37,7 @@ public class JdbcAppleConnector implements JdbcConnector<Apple>{
             connection.close();
             return apples;
         } catch (ClassNotFoundException | SQLException e) {
+            //Лиза! Надо что-то внятное прокидывать. Создай свой эксепшен. Например AppleJdbcEception
             throw new RuntimeException(e);
         }
     }
