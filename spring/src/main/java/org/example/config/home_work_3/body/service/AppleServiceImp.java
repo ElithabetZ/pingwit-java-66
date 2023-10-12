@@ -21,12 +21,14 @@ public class AppleServiceImp implements AppleService{
         return appleRepository.getAll();
     }
 
+    //см комментарии в интерфейсе
     @Override
     public Map<String, Integer> getByName(String name) {
+        // ты уже этот выхов релизовала с 19-21 строки. Так переиспользуй.
         List<Apple> apples = appleRepository.getAll();
         Map<String, Integer> response = apples.stream()
-                .filter(apple -> apple.name().equals(name))
+                .filter(apple -> apple.name().equals(name))//А почему бы не запросить из базы такие яблоки сразу?
                 .collect(Collectors.groupingBy(Apple::name, Collectors.summingInt(apple -> apple.quantity())));
-        return response;
+        return response;//сразу return в 29 строке
     }
 }
