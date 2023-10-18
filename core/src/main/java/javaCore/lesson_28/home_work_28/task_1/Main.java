@@ -1,5 +1,7 @@
 package javaCore.lesson_28.home_work_28.task_1;
 
+import java.util.List;
+
 /*
 Создать класс, который в цикле выводит на экран числа от 0-20 и в каждой итерации цикла засыпает на 1 секунду,
 запустить его в отдельном потоке. Поток main должен дождаться окончания работы дочернего потока
@@ -11,6 +13,8 @@ public class Main {
         RunnableClass runnableClass = new RunnableClass();
         Thread threadRunnable = new Thread(runnableClass);
         threadRunnable.start();
+
+
 
         try {
             threadRunnable.join();

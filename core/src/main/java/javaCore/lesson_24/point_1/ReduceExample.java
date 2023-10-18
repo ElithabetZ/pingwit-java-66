@@ -32,6 +32,7 @@ public class ReduceExample {
 
         Integer reduce = phones.stream()
                 .reduce(0, (partiaPrice, phone) -> partiaPrice + phone.price(), Integer::sum);
+        System.out.println(reduce);
 
         Integer integer = letters.stream()
                 .map(String::length)

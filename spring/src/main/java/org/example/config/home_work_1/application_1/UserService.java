@@ -17,13 +17,13 @@ public class UserService {
 
     @PostConstruct
     private void init() {
-        System.out.println("User service post construct!");
+        System.out.println("User com.service post construct!");
         User admin = new User(1L, "admin", "admin password");
         userRepository.save(admin);
     }
 
     @PreDestroy
     private void destroy() {
-        System.out.println("User service is going to die!");
+        System.out.println("User com.service is going to die!");
     }
 }

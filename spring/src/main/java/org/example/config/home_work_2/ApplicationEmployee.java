@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.List;
 /*
-1. У тебя максимально странная структура проекта - во первых, все папки с маленькой буквы. Во вторых, папка service - все сервисные классы, 
-папка repository - классы, работающие с БД. Не надо getAll и что-то там. Это неправильно и абсолютно нечитабельно
+1. У тебя максимально странная структура проекта - во первых, все папки с маленькой буквы. Во вторых, папка com.service - все сервисные классы,
+папка com.repository - классы, работающие с БД. Не надо getAll и что-то там. Это неправильно и абсолютно нечитабельно
 */
 @SpringBootApplication
 public class ApplicationEmployee implements CommandLineRunner {
@@ -23,13 +23,14 @@ public class ApplicationEmployee implements CommandLineRunner {
     }
     @Override
     public void run(String... args) throws Exception {
-        List<Employee> employeeList = employeeService.getAll();
-        employeeList.forEach(System.out::println);
+        System.out.println("Hello");
+//        List<Employee> employeeList = employeeService.getAll();
+//        employeeList.forEach(System.out::println);
 
-        List<Employee> employeeList2 = employeeService.getAllByCondition(new Employee("Mike"));
-        employeeList2.forEach(System.out::println);
-
-        List<Employee> employeeList3 = employeeService.getAllByCondition(new Employee("Mike", 12));
-        employeeList3.forEach(System.out::println);
+//        List<Employee> employeeList2 = employeeService.getAllByCondition(new Employee("Mike"));
+//        employeeList2.forEach(System.out::println);
+//
+//        List<Employee> employeeList3 = employeeService.getAllByCondition(new Employee("Mike", 12));
+//        employeeList3.forEach(System.out::println);
     }
 }

@@ -1,7 +1,7 @@
 package org.example.config.home_work_2.ApplicationBody;
 
 import java.util.Objects;
-//в папку entity/model
+//в папку com.entity/model
 public class Employee{
 //где private?
     Long id;
