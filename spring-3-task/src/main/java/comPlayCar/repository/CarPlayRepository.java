@@ -10,7 +10,7 @@ public interface CarPlayRepository extends CrudRepository<CarPlay, Long> {
 
     List<CarPlay> findAllByVersionGreaterThan(Long version);
 
-    List<CarPlay> findAllByupdatedate(LocalDate time);
+    List<CarPlay> findAllByupdatedate(LocalDate time);//findAllByUpdatedate
 
     List<CarPlay> findAllByIdIn(List<Long> list);
 }
