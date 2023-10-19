@@ -34,6 +34,7 @@ public class CarPlayController {
                 .map(carPlayConverter::toDto)
                 .collect(Collectors.toList());
     }
+    //по id чаще всего делается не параметр, а @PathVariable
     @GetMapping ("/id")
     @ResponseBody
     public List<CarPlayDto> getByIdRange(@RequestParam List<Long> list){
