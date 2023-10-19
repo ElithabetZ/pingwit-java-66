@@ -1,4 +1,4 @@
-package comPlayCar.service;
+package comPlayCar.service;//com.playcar.service
 
 import comPlayCar.entity.CarPlay;
 import org.apache.commons.collections4.IterableUtils;
@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Service
+//CarPlayService
 public class CarPlaySvice {
 
     private final CarPlayRepository carPlayRepository;
@@ -22,6 +23,8 @@ public class CarPlaySvice {
         return IterableUtils.toList(carPlayRepository.findAllByVersionGreaterThan(version));
     }
 
+    //getCurrentlyUpdated
+    //твое название не соответствует тому, что делает
     public List<CarPlay> getAllByDateTime(){
         return IterableUtils.toList(carPlayRepository.findAllByupdatedate(LocalDateTime.now().toLocalDate()));
     }
