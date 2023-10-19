@@ -1,5 +1,6 @@
 spring:
   datasource:
+  #заводить новую базу под каждое задание не надо
     url: jdbc:postgresql://localhost:5432/carplay
     username: postgres
     password: root
