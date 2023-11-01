@@ -2,9 +2,11 @@ package comPlayCar.service;//com.playcar.service
 
 import comPlayCar.entity.CarPlay;
 import org.apache.commons.collections4.IterableUtils;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import comPlayCar.repository.CarPlayRepository;
 
+import org.springframework.data.domain.Pageable;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
@@ -31,5 +33,16 @@ public class CarPlaySvice {
 
     public List<CarPlay> getAllByIdRange(List<Long> list){
         return IterableUtils.toList(carPlayRepository.findAllByIdIn(list));
+    }
+
+    public Page<CarPlay> getAll(Pageable pageable){
+        Page<CarPlay> page = carPlayRepository.findAll(pageable);
+        //exceptionGenerator();
+        return page;
+
+    }
+
+    private void exceptionGenerator() throws IllegalArgumentException {
+        throw new IllegalArgumentException("My unknown message");
     }
 }
