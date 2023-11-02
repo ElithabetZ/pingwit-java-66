@@ -29,6 +29,7 @@ public class User {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "subscription_id")
     )
+    //можешь new ArrayList<> сделать по умолчанию, чтобы потом с null не ходить
     private List<Subscription> subscriptions;
 
     @OneToMany(mappedBy = "user")
