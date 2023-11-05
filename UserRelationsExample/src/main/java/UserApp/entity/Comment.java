@@ -1,4 +1,4 @@
-package entity;
+package UserApp.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,10 +10,14 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Subscription {
+@Table(name="comment")
+public class Comment {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Enumerated(EnumType.STRING)
-    private Type type;
+    private String text;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 }

@@ -1,4 +1,4 @@
-package entity;
+package UserApp.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,6 +12,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name="user")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +21,7 @@ public class User {
     private String login;
 
     @OneToOne
-    @JoinColumn(name="avatar_id")
+    @JoinColumn(name="avatar_id")//foreign key
     private Avatar avatar;
 
     @ManyToMany
@@ -31,7 +32,6 @@ public class User {
     )
     //можешь new ArrayList<> сделать по умолчанию, чтобы потом с null не ходить
     private List<Subscription> subscriptions;
-
     @OneToMany(mappedBy = "user")
     private List<Comment> comments;
 }

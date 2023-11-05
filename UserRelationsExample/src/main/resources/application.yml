@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/carplay
+    username: postgres
+    password: root
+
+server:
+  port: 8443
+
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+
+    show-sql: true
+
+  #  generate-ddl: true
+  #  hibernate:
+  #   ddl-auto: create
