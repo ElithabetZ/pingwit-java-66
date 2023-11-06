@@ -11,6 +11,10 @@ public class UserService {
 
     private final UserRepository userRepository;
 
+    /*
+        Сделай так: возвращай тут Optional<User>
+        В котроллере обрабатывай данную ситуацию: если empty, то возвращай код 404 (испаользуй ResponseEntity), иначе - 200 (OK)
+     */
     public User findById(Long id){
         return userRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Oppps"));

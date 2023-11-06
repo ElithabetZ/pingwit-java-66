@@ -8,6 +8,9 @@ import UserApp.entity.User;
 import org.springframework.web.bind.annotation.*;
 import UserApp.service.UserService;
 
+/*
+    Не вижу в дз подготовленных json.
+ */
 @RestController
 @RequestMapping("/users")
 public class UserController {
