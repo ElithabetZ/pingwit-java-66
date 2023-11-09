@@ -26,6 +26,7 @@ public class SongService {
         return songRepository.save(song);
     }
 
+    //Optional
     public Song findById(Long id){
         return songRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Don't find such song "+id));
