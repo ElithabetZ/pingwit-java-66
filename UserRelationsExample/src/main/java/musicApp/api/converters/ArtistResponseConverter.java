@@ -24,7 +24,7 @@ public class ArtistResponseConverter {
             songsDto = null;
         }
 
-
+//зачем эти строки пустые?!
         return new ArtistResponseDto(artist.getId(), artist.getName(), artist.getDateOfConcert(), songsDto);
     }
 }
