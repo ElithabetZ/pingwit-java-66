@@ -11,13 +11,13 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="artist")
+@Table(name="artist")//это имя и так по умолчанию
 public class Artist {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+//зачем пустая строка?
     private String name;
 
     private String dateOfConcert;
