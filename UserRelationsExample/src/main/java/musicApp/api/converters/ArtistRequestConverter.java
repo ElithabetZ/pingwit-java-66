@@ -20,6 +20,7 @@ public class ArtistRequestConverter {
         artist.setDateOfConcert(dto.dateOfConcert());
         if(dto.songs()!=null){
             artist.setSongs(dto.songs().stream().map(songConverter::toModel).toList());
+            //а как же bidirectional mapping? Song ведь тоже должен об артисте знать (в твоей моделе)
         }
         return artist;
     }
