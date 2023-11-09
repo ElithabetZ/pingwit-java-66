@@ -49,11 +49,19 @@ public class ArtistController {
     }
 
     @PutMapping("/date")
+    //id сущности - часть url, но никак и никогда не параметр, это не по REST принципам ->  @PutMapping("/{id}/date")
     public ArtistResponseDto updateDateOfConsert(@RequestParam long id, @RequestParam String date){
         Artist updatedArtist = artistService.updateDate(id, date);
         return artistResponseConverter.toDto(updatedArtist);
     }
+/*
+ @PutMapping("/{id}"), id - тот, кого ты хочешь изменить
+ @RequestParam String newName / ну или как у тебя id
 
+ changeArtists - и так понятно, что это change, так как у тебя метод PUT
+
+ Метод PUT - полное обновление. У тебя по заданию частичное (только имя существующего артиста). Значит вместо PutMapping->PatchMapping
+*/
     @PutMapping("/changeArtists")
     public List<ArtistResponseDto> changeArtist(@RequestParam long idFirst, @RequestParam long idSecond){
         List<Artist> switchedArtists = artistService.switchArtists(idFirst, idSecond);
