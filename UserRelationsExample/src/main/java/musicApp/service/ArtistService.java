@@ -30,9 +30,10 @@ public class ArtistService {
 
     public Artist findById(Long id){
         return artistRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Don't find such user "+id));
+                .orElseThrow(() -> new IllegalArgumentException("Don't find such user "+id));//User with id=[%d] does not exist. Лучше вернуть Optional.
     }
 
+    //почему не попробовать использовать новый материал с @Query/TypedQuery?
     public Artist updateDate(Long id, String date){
         Artist artist = findById(id);
         artist.setDateOfConcert(date);
@@ -40,6 +41,7 @@ public class ArtistService {
         return artistRepository.save(artist);
     }
 
+    //switchArtists - > switchArtistsNames! у тебя не полноценный switch. Имя метода должна соответствовать тому, что в нем происходит
     public List<Artist> switchArtists(Long idFirst, Long idSecond){
         Artist tempArtistOne = findById(idFirst);
         Artist tempArtistTwo = findById(idSecond);
