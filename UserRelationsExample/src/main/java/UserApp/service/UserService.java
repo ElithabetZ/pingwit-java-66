@@ -17,7 +17,7 @@ public class UserService {
      */
     public User findById(Long id){
         return userRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Oppps"));
+                .orElseThrow(() -> new IllegalArgumentException("Don't find such user "+id));
     }
 
     public User save(User user){

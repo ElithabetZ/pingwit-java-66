@@ -20,7 +20,7 @@ public class User {
 
     private String login;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="avatar_id")//foreign key
     private Avatar avatar;
 

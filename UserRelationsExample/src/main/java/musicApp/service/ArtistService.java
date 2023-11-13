@@ -2,7 +2,6 @@ package musicApp.service;
 
 import lombok.RequiredArgsConstructor;
 import musicApp.entity.Artist;
-import musicApp.entity.Song;
 import musicApp.repository.ArtistRepository;
 import musicApp.repository.SOngRepository;
 import org.springframework.data.domain.Page;

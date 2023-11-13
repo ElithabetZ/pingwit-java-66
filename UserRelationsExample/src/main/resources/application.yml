@@ -1,5 +1,3 @@
-#у тебя был неправильно законфигурировал yml. Ты пишешь server.port, а потом jpa. Но этот jpa
-#уже не относится к spring. Ты его "прервала"
 server:
   port: 8443
 
@@ -8,11 +6,19 @@ spring:
     url: jdbc:postgresql://localhost:5432/carplay
     username: postgres
     password: root
+
   jpa:
     properties:
       hibernate:
         default_schema: public
+
     show-sql: true
-#    generate-ddl: true
-#    hibernate:
-#     ddl-auto: create
+  #  generate-ddl: true
+  #  hibernate:
+  #   ddl-auto: create
+
+  liquibase:
+    change-log: "classpath:db/changelog/liquibase-changelog.xml"
+    enabled: true
+    drop-first: false
+    default-schema: public
