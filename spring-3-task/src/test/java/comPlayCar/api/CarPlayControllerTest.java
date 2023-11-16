@@ -16,7 +16,7 @@ import java.time.Month;
 import java.util.List;
 
 import static org.mockito.Mockito.when;
-
+//1. форматирование кода; 2.com.carplay; 3.Где тесты сервиса, конвертера? Этого недостаточно
 @ExtendWith(SpringExtension.class)
 public class CarPlayControllerTest {
 
