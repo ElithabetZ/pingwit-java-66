@@ -1,10 +1,9 @@
 package musicApp.service;
 
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 import musicApp.entity.Artist;
 import musicApp.repository.ArtistRepository;
-import musicApp.repository.SOngRepository;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -13,10 +12,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class ArtistService {
 
     private final ArtistRepository artistRepository;
+    @Lazy
+    private final SongService songService;
 
     public Page<Artist> findAll(Pageable pageable){
         return artistRepository.findAll(pageable);
@@ -26,7 +27,7 @@ public class ArtistService {
         return artistRepository.save(artist);
     }
 
-    private final SOngRepository sOngRepository;
+
 
     public Artist findById(Long id){
         return artistRepository.findById(id)
@@ -49,6 +50,8 @@ public class ArtistService {
 
         tempArtistOne.setName(tempArtistTwo.getName());
         tempArtistTwo.setName(tempName);
+
+
 
         List<Artist> updatedArtists = new ArrayList<>();
         updatedArtists.add(artistRepository.save(tempArtistOne));
